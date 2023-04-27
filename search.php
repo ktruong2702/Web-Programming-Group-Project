@@ -120,6 +120,9 @@ if (isset($_SESSION["user_id"])) {
             <br>
             <form id="rating-form" action="submit_rating.php" method="POST">
                 <div class="form-group">
+                    <br>
+                    <h1 style = "color: white"> Rate this movie: </h1>
+                    <br>
                     <label for="movie_id"><span class="form-label-bold">Movie ID:</span></label>
                     <div class="form-control-wrapper">
                         <input type="text" id="movie_id" name="movie_id" class="form-control" value="" readonly>
