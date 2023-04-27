@@ -53,6 +53,7 @@ try {
     $update_query = "UPDATE ratings SET rating=? WHERE user_id=? AND movie_id=?";
     $stmt = mysqli_prepare($conn, $update_query);
     mysqli_stmt_bind_param($stmt, 'dis', $rating, $user_id, $movie_id);
+    mysqli_stmt_execute($stmt); // Add this line to execute the update query
   } else {
     // insert a new rating
     $insert_query = "INSERT INTO ratings (user_id, movie_id, rating) VALUES (?, ?, ?)";
