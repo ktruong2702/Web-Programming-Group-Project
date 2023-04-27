@@ -1,3 +1,22 @@
+<?php
+
+session_start();
+
+if (isset($_SESSION["user_id"])) {
+    
+    $mysqli = require __DIR__ . "/database.php";
+    
+    $sql = "SELECT * FROM user
+            WHERE id = {$_SESSION["user_id"]}";
+            
+    $result = $mysqli->query($sql);
+    
+    $user = $result->fetch_assoc();
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html>
 
@@ -51,12 +70,12 @@
   $conn = mysqli_connect("localhost", "root", "", "login_db");
 
   // Retrieve the rating ID from the form data
-  $movie_id = $_POST["movie_id"];
+  $id = $_POST["id"];
 
   // Delete the rating data from the database
-  $sql = "DELETE FROM ratings WHERE movie_id = $movie_id";
+  $sql = "DELETE FROM ratings WHERE id = $id";
   if (mysqli_query($conn, $sql)) {
-        echo "<p class='msg'> Rating with Movie ID '$movie_id' deleted successfully </p>";
+        echo "<p class='msg'> Rating with ID '$id' deleted successfully </p>";
 } else {
         echo "<p class='msg'> Error deleting rating data: </p>" . mysqli_error($conn);
   }
