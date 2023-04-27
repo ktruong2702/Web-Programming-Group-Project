@@ -114,7 +114,7 @@ if (isset($_SESSION["user_id"])) {
             echo "<td>" . $row["user_id"] . "</td>";
             echo "<td>" . $row["movie_id"] . "</td>";
             echo "<td>" . $row["rating"] . "</td>";
-            echo "<td><form method='post' action='delete_rating.php'><input type='hidden' name='movie_id' value='" . $row["id"] . "'><button type='submit'>Delete</button></form></td>";
+            echo "<td><form method='post' action='delete_rating.php'><input type='hidden' name='id' value='" . $row["id"] . "'><button type='submit'>Delete</button></form></td>";
             echo "</tr>";
             }
             echo "</table>";
