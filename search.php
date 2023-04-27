@@ -122,7 +122,7 @@ if (isset($_SESSION["user_id"])) {
                 <div class="form-group">
                     <label for="movie_id"><span class="form-label-bold">Movie ID:</span></label>
                     <div class="form-control-wrapper">
-                        <input type="text" id="movie_id" name="movie_id" class="form-control" value="" required>
+                        <input type="text" id="movie_id" name="movie_id" class="form-control" value="" readonly>
                     </div>
                 </div>
                 <br>
