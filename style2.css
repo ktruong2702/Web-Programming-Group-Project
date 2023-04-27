@@ -1,0 +1,71 @@
+/* Set default font and color */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+}
+
+/* Movie list container */
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Movie item */
+.movies li {
+    width: 300px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #272727;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease-in-out;
+}
+
+/* Movie item on hover */
+.movies li:hover {
+    transform: scale(1.05);
+}
+
+/* Movie image */
+.movies li img {
+    display: block;
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Movie title */
+.movies li h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+    color: #fff;
+}
+
+/* Movie rating */
+.movies li p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #ccc;
+}
+
+/* Movie link */
+.movies li a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1.2rem;
+    color: #fff;
+    background-color: #ff5500;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.2s ease-in-out;
+}
+
+/* Movie link on hover */
+.movies li a:hover {
+    background-color: #ff7722;
+}
