@@ -127,7 +127,7 @@ if (isset($_SESSION["user_id"])) {
         ?>
         
         <?php else: ?>
-            <p>Please log in to view the user table</p>
+            <p>Please log in to view your ratings history</p>
         <?php endif; ?>
 
 
