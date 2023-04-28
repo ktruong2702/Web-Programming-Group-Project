@@ -1,2 +1,14 @@
 # Web-Programming-Group-Project
-Web Programming Project with Mark Carter (CSC4370- Spring 2023) Professor: Luis Alberto Robles Hernandez
+TEAM EVALUATION/ CONTRIBUTION
+  Mark Carter:
+    Visual
+    Page Layout
+    Mainly HTML, CSS, Script, Final Report
+  Khang Truong:
+    API integration
+    Page content
+    Mainly PHP (convert Mark’s HTML into PHP), SQL, Script, Final Report
+  Gregory Vaughan:
+    No contributions except PPT
+  Mark Chai:
+    No contributions except PPT
