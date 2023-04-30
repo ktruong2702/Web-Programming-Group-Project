@@ -1,4 +1,4 @@
-PLease view this as RAW
+Please view this as RAW
 
 
 Title of Web Aplication: CinemaCitizen
